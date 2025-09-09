@@ -7,7 +7,7 @@ type btn = {
 const Button = ({btnText, className}: btn) => {
   return (
     <div>
-        <button className={className}>{btnText}</button>
+        <button className={`bg-[#FF60E6] font-semibold rounded-full px-[28px] py-[8px]  hover:bg-[#FFADF2] transition-all cursor-pointer ${className}`}>{btnText}</button>
     </div>
   )
 }
