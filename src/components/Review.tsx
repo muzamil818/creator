@@ -46,7 +46,7 @@ const Review = () => {
     } else {
       setTransition(true);
     }
-  }, [current]);
+  }, [current, cards.length]);
 
   return (
     <div id="review" className="flex flex-col gap-8 justify-center px-[160px] py-16 h-[130vh] bg-[#F8F5F0] text-[#1F392C]">
