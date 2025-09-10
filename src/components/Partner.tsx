@@ -5,7 +5,7 @@ import workLine from "../assets/workLine.png";
 
 const Work = () => {
   return (
-    <div className="relative z-10 flex flex-col justify-center items-center h-[666px] w-full bg-[#F8F5F0] py-[72] px-[62]">
+    <div id="partner" className="relative z-10 flex flex-col justify-center items-center h-[666px] w-full bg-[#F8F5F0] py-[72] px-[62]">
       <h1 className="text-[#1F392C] text-4xl font-extrabold  leading-tight">
         Contact us today to explore
         <br /> partnership{" "}

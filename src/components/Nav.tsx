@@ -1,6 +1,12 @@
 import logo from "../assets/logo.png";
 import Button from "./Button";
 function Nav() {
+  const navItems = [
+  { name: "Partners", id: "partners" },
+  { name: "How we Work", id: "howwework" },
+  { name: "Review", id: "review" },
+  { name: "Charity", id: "charity" },
+];
   return (
     <div className="bg-[#F8F5F0] sticky top-0 z-50 pb-[16px] pt-[30px] px-[160px] flex justify-between items-center h-[60px] w-full ">
       {/* left Nav */}
@@ -12,13 +18,14 @@ function Nav() {
       {/* Middle Nav */}
       <div className="">
         <ul className="flex justify-center items-center gap-8">
-          {["Partners", "How we Work", "Review", "Charity"].map((item, i) => (
-            <li
+          {navItems.map((item, i) => (
+            <a
+              href={item.id}
               key={i}
               className="cursor-pointer p-2 hover:text-pink-500 transition-colors"
             >
-              {item}
-            </li>
+              {item.name}
+            </a>
           ))}
         </ul>
       </div>
