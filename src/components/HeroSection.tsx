@@ -10,7 +10,7 @@ import Button from "./Button";
 
 const HeroSection = () => {
   return (
-    <div className="bg-[#F8F5F0] w-full h-[110vh] flex ">
+    <div id="home" className="bg-[#F8F5F0] w-full h-[110vh] flex ">
       {/* Left section */}
       <div className="relative h-[120vh] w-1/4">
         {/* Background line */}
