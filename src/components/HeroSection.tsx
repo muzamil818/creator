@@ -37,7 +37,7 @@ const HeroSection = () => {
 
       {/* Middle section */}
       <div className="sm:py-[100px] lg:py-[270px] flex-1 gap-7  flex-col flex items-center justify-center text-center">
-        <h1 className="text-[#1F392C] text-center text-2xl md:text-5xl lg:text-7xl font-extrabold  leading-tight">
+        <h1 className="text-[#1F392C] text-center text-4xl md:text-5xl lg:text-7xl font-extrabold  leading-tight">
           Spark your brand's{" "}
           <span className=" relative inline-block ">
             <span className="relative z-10">imaginative </span>  
