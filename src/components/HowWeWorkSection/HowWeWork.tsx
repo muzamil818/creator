@@ -14,7 +14,7 @@ const HowWeWork = () => {
         <img
           src={illustration}
           alt="How we work illustration"
-          className="max-w-[400px] sm:max-w-[600px] lg:max-w-[700px] object-contain"
+          className="max-w-[250px] sm:max-w-[600px] lg:max-w-[700px] object-contain"
         />
       </div>
     </div>
