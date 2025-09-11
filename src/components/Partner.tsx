@@ -12,7 +12,7 @@ const Work = () => {
   <div className="w-full md:w-[80%] items-center">
     {/* Heading */}
     <h1 className="text-[#1F392C] text-2xl sm:text-3xl md:text-4xl font-extrabold leading-snug md:leading-tight text-center md:text-left">
-      Contact us today to explore
+      Contact us today to explore{" "}
       <br className="hidden sm:block" />
       partnership{" "}
       <span className="relative inline-block">
