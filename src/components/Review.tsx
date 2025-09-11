@@ -49,67 +49,68 @@ const Review = () => {
   }, [current, cards.length]);
 
   return (
-    <div id="review" className="flex flex-col gap-8 justify-center px-[160px] py-16 h-[130vh] bg-[#F8F5F0] text-[#1F392C]">
-      <p className="text-center text-[12px] ">
-        Hear from our customers from Top YouTube Channel
-      </p>
+<div id="review" className="flex flex-col gap-8 justify-center px-4 sm:px-8 md:px-16 lg:px-24 py-16 bg-[#F8F5F0] text-[#1F392C]">
+  <p className="text-center text-[12px]">
+    Hear from our customers from Top YouTube Channel
+  </p>
 
-      <h3 className="text-3xl font-bold leading-snug">
-        We`ve taught{" "}
-        <span className="inline-flex items-center gap-1">
-          <img src={pic1} alt="" className="inline-block w-6 h-6" />
-        </span>{" "}
-        over 3,000 creators
-        <br /> how to{" "}
-        <span className="inline-flex items-center gap-1">
-          <img src={pic2} alt="" className="inline-block w-6 h-6" />
-        </span>{" "}
-        grow on any Platform{" "}
-        <span className="inline-flex items-center gap-1">
-          <img src={pic3} alt="" className="inline-block w-6 h-6" />
-        </span>
-      </h3>
+  <h3 className="text-2xl sm:text-3xl font-bold leading-snug text-center lg:text-left">
+    We’ve taught{" "}
+    <span className="inline-flex items-center gap-1">
+      <img src={pic1} alt="" className="w-5 h-5 sm:w-6 sm:h-6" />
+    </span>{" "}
+    over 3,000 creators
+    <br /> how to{" "}
+    <span className="inline-flex items-center gap-1">
+      <img src={pic2} alt="" className="w-5 h-5 sm:w-6 sm:h-6" />
+    </span>{" "}
+    grow on any Platform{" "}
+    <span className="inline-flex items-center gap-1">
+      <img src={pic3} alt="" className="w-5 h-5 sm:w-6 sm:h-6" />
+    </span>
+  </h3>
 
-      <h3 className="z-10 text-3xl font-bold">
-        Now{" "}
-        <span className="inline-block">
-          we can do
-          <img
-            className="z-0 bottom-1 relative w-30 h-3 object-contain"
-            src={underline}
-            alt=""
-          />
-        </span>{" "}
-        it for you
-      </h3>
+  <h3 className="relative text-2xl sm:text-3xl font-bold text-center lg:text-left">
+    Now{" "}
+    <span className="inline-block relative">
+      we can do
+      <img
+        className="absolute bottom-0 left-0 w-24 sm:w-30 h-2 object-contain"
+        src={underline}
+        alt=""
+      />
+    </span>{" "}
+    it for you
+  </h3>
 
-      <h4 className="text-[18px] font-semibold">
-        See what our famous clients
-        <br /> write about us:
-      </h4>
+  <h4 className="text-[16px] sm:text-[18px] font-semibold text-center lg:text-left">
+    See what our famous clients
+    <br /> write about us:
+  </h4>
 
-      {/* Buttons */}
-      <div className="flex justify-end px-4 gap-3 ">
-        <button onClick={prePic} className="text-4xl text-[#1F392C]">
-          <FaRegArrowAltCircleLeft />
-        </button>
-        <button onClick={nextPic} className="text-4xl text-[#1F392C]">
-          <FaRegArrowAltCircleRight />
-        </button>
-      </div>
+  {/* Buttons */}
+  <div className="flex justify-center lg:justify-end gap-4">
+    <button onClick={prePic} className="text-3xl sm:text-4xl text-[#1F392C]">
+      <FaRegArrowAltCircleLeft />
+    </button>
+    <button onClick={nextPic} className="text-3xl sm:text-4xl text-[#1F392C]">
+      <FaRegArrowAltCircleRight />
+    </button>
+  </div>
 
-      {/* Carousel */}
-      <div className="overflow-hidden w-full">
-        <div
-          className={`flex gap-4 ${transition ? "transition-transform duration-500" : ""}`}
-          style={{ transform: `translateX(-${current * 315}px)` }} // 300px card + ~12px gap
-        >
-          {extendedCards.map((src, i) => (
-            <ReviewCards key={i} src={src.src} />
-          ))}
-        </div>
-      </div>
+  {/* Carousel */}
+  <div className="overflow-hidden w-full">
+    <div
+      className={`flex gap-4 ${transition ? "transition-transform duration-500" : ""}`}
+      style={{ transform: `translateX(-${current * 70}%)` }}
+    >
+      {extendedCards.map((src, i) => (
+        <ReviewCards key={i} src={src.src} />
+      ))}
     </div>
+  </div>
+</div>
+
   );
 };
 

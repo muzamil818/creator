@@ -11,7 +11,7 @@ const Charity = ({className, img, img1, titleClass, title, divClass}: types) => 
   return (
     <div id="charity" className="h-[60vh] w-full flex justify-center items-center  bg-[#F8F5F0]">
 
-        <div className={`rounded h-[315px] w-[380px] flex  flex-col gap-[20px] text-[#1F392C] bg-[#FF60E6] justify-center ${className}`}>
+        <div className={`rounded  lg:h-[315px] lg:w-[380px] h-[280px] w-[240px] sm:h-[300px] sm:w-[260px] flex  flex-col gap-[20px] text-[#1F392C] bg-[#FF60E6] justify-center ${className}`}>
             <div className="flex flex-col gap-2" >
                 <img src={img} alt="" />
                 <img src={img1} alt="" />

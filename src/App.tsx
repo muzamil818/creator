@@ -15,7 +15,7 @@ function App() {
       <HowWeWork />
       <HowWeWork2 />
       <Review />
-      <div className="py-16 px-[245px]  flex  justify-center items-center gap-8 bg-[#F8F5F0] ">  
+      <div className="py-12 lg:py-16 lg:px-[245px] sm:flex-col  lg:flex  lg:justify-center lg:items-center lg:gap-8 bg-[#F8F5F0] ">  
         <Charity img={img} img1={img1}/>
         <Charity className="bg-white" divClass="relative top-[-15%] gap-8" titleClass="text-4xl font-bold px-[32px]" title="Charity"/>
       </div>
