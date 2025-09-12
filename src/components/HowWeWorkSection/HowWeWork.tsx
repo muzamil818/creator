@@ -3,7 +3,7 @@ import illustration from "../../assets/Illustration.png" // your combined person
 
 const HowWeWork = () => {
   return (
-    <div id="howwework" className=" py-[64px] relative flex flex-col items-center justify-center w-full bg-[#F8F5F0]">
+    <div id="howwework" className="z-10 py-[64px] relative flex flex-col items-center justify-center w-full bg-[#F8F5F0]">
       {/* Title */}
       <h2 className="text-2xl sm:text-4xl font-bold text-[#1F392C] text-center max-w-3xl leading-snug">
         Making it big on any Platform<br/> is tougher than you think

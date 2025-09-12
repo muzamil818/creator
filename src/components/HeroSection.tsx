@@ -7,6 +7,7 @@ import facebook from "../assets/facebook.png";
 import bulb from "../assets/bulb.png";
 import lineCover from "../assets/lineCover.png";
 import Button from "./Button";
+import { motion } from "motion/react";
 // import rightline from "../assets/rightline.png";
 // import righthand from "../assets/rightHand.png";
 
@@ -30,9 +31,13 @@ const HeroSection = () => {
         />
 
         {/* Socials + Bulb */}
-        <img className="absolute top-[280px] left-6 w-10" src={instagram} alt="Instagram" />
-        <img className="absolute bottom-24 left-20 w-10" src={facebook} alt="Facebook" />
-        <img className="absolute top-[200px] left-[150px] h-16" src={bulb} alt="Bulb" />
+        <motion.img animate={{rotate:360}} transition={{duration:3, repeat:Infinity}}  className="absolute top-[280px] left-6 w-10" src={instagram} alt="Instagram" />
+        <motion.img animate={{x:[0,10,0], y:[0,10, 0]}} transition={{duration:3, repeat:Infinity}}   className="absolute bottom-24 left-20 w-10" src={facebook} alt="Facebook" />
+        <motion.img animate={{
+          y:[0,10,0]
+          
+          } 
+          }  transition={{duration:2, repeat:Infinity}} className="ease-in-out absolute top-[200px] left-[150px] h-16" src={bulb} alt="Bulb" />
       </div>
 
       {/* Middle section */}
@@ -66,7 +71,11 @@ const HeroSection = () => {
         />
 
         {/* Bulb */}
-        <img
+        <motion.img animate={{
+          x:[0,20,0]
+          
+          } 
+          }  transition={{duration:3, repeat:Infinity}}
           src={bulb}
           alt="Bulb Right"
           className="absolute top-[250px] right-[180px] h-16 z-10"
